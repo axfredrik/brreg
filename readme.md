@@ -1,5 +1,5 @@
-This is the Brønnøysund connector.
-Note: Data and labels returned are currently in Norwegian.
+This is the Brønnøysund connector. <br>
+### Note: Data and labels returned are currently in Norwegian.
 
 Description in Norwegian: 
 "Brønnøysundregistrene utvikler og driver digitale tjenester som effektiviserer, samordner og forenkler dialogen med det offentlige for personer og virksomheter. Vi driver mange av landets viktigste registre."
