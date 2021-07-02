@@ -1,0 +1,611 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Brreg",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "data.brreg.no",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/enhetsregisteret/api/enheter": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "_embedded": {
+                  "type": "object",
+                  "properties": {
+                    "enheter": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "organisasjonsnummer": {
+                            "type": "string",
+                            "description": "organisasjonsnummer"
+                          },
+                          "navn": {
+                            "type": "string",
+                            "description": "navn"
+                          },
+                          "organisasjonsform": {
+                            "type": "object",
+                            "properties": {
+                              "kode": {
+                                "type": "string",
+                                "description": "kode"
+                              },
+                              "beskrivelse": {
+                                "type": "string",
+                                "description": "beskrivelse"
+                              },
+                              "_links": {
+                                "type": "object",
+                                "properties": {
+                                  "self": {
+                                    "type": "object",
+                                    "properties": {
+                                      "href": {
+                                        "type": "string",
+                                        "description": "href"
+                                      }
+                                    },
+                                    "description": "self"
+                                  }
+                                },
+                                "description": "_links"
+                              }
+                            },
+                            "description": "organisasjonsform"
+                          },
+                          "registreringsdatoEnhetsregisteret": {
+                            "type": "string",
+                            "description": "registreringsdatoEnhetsregisteret"
+                          },
+                          "registrertIMvaregisteret": {
+                            "type": "boolean",
+                            "description": "registrertIMvaregisteret"
+                          },
+                          "naeringskode1": {
+                            "type": "object",
+                            "properties": {
+                              "beskrivelse": {
+                                "type": "string",
+                                "description": "beskrivelse"
+                              },
+                              "kode": {
+                                "type": "string",
+                                "description": "kode"
+                              }
+                            },
+                            "description": "naeringskode1"
+                          },
+                          "antallAnsatte": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "antallAnsatte"
+                          },
+                          "forretningsadresse": {
+                            "type": "object",
+                            "properties": {
+                              "land": {
+                                "type": "string",
+                                "description": "land"
+                              },
+                              "landkode": {
+                                "type": "string",
+                                "description": "landkode"
+                              },
+                              "postnummer": {
+                                "type": "string",
+                                "description": "postnummer"
+                              },
+                              "poststed": {
+                                "type": "string",
+                                "description": "poststed"
+                              },
+                              "adresse": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                },
+                                "description": "adresse"
+                              },
+                              "kommune": {
+                                "type": "string",
+                                "description": "kommune"
+                              },
+                              "kommunenummer": {
+                                "type": "string",
+                                "description": "kommunenummer"
+                              }
+                            },
+                            "description": "forretningsadresse"
+                          },
+                          "institusjonellSektorkode": {
+                            "type": "object",
+                            "properties": {
+                              "kode": {
+                                "type": "string",
+                                "description": "kode"
+                              },
+                              "beskrivelse": {
+                                "type": "string",
+                                "description": "beskrivelse"
+                              }
+                            },
+                            "description": "institusjonellSektorkode"
+                          },
+                          "registrertIForetaksregisteret": {
+                            "type": "boolean",
+                            "description": "registrertIForetaksregisteret"
+                          },
+                          "registrertIStiftelsesregisteret": {
+                            "type": "boolean",
+                            "description": "registrertIStiftelsesregisteret"
+                          },
+                          "registrertIFrivillighetsregisteret": {
+                            "type": "boolean",
+                            "description": "registrertIFrivillighetsregisteret"
+                          },
+                          "konkurs": {
+                            "type": "boolean",
+                            "description": "konkurs"
+                          },
+                          "underAvvikling": {
+                            "type": "boolean",
+                            "description": "underAvvikling"
+                          },
+                          "underTvangsavviklingEllerTvangsopplosning": {
+                            "type": "boolean",
+                            "description": "underTvangsavviklingEllerTvangsopplosning"
+                          },
+                          "maalform": {
+                            "type": "string",
+                            "description": "maalform"
+                          },
+                          "_links": {
+                            "type": "object",
+                            "properties": {
+                              "self": {
+                                "type": "object",
+                                "properties": {
+                                  "href": {
+                                    "type": "string",
+                                    "description": "href"
+                                  }
+                                },
+                                "description": "self"
+                              }
+                            },
+                            "description": "_links"
+                          },
+                          "stiftelsesdato": {
+                            "type": "string",
+                            "description": "stiftelsesdato"
+                          },
+                          "sisteInnsendteAarsregnskap": {
+                            "type": "string",
+                            "description": "sisteInnsendteAarsregnskap"
+                          },
+                          "hjemmeside": {
+                            "type": "string",
+                            "description": "hjemmeside"
+                          },
+                          "postadresse": {
+                            "type": "object",
+                            "properties": {
+                              "land": {
+                                "type": "string",
+                                "description": "land"
+                              },
+                              "landkode": {
+                                "type": "string",
+                                "description": "landkode"
+                              },
+                              "postnummer": {
+                                "type": "string",
+                                "description": "postnummer"
+                              },
+                              "poststed": {
+                                "type": "string",
+                                "description": "poststed"
+                              },
+                              "adresse": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                },
+                                "description": "adresse"
+                              },
+                              "kommune": {
+                                "type": "string",
+                                "description": "kommune"
+                              },
+                              "kommunenummer": {
+                                "type": "string",
+                                "description": "kommunenummer"
+                              }
+                            },
+                            "description": "postadresse"
+                          },
+                          "frivilligMvaRegistrertBeskrivelser": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "frivilligMvaRegistrertBeskrivelser"
+                          },
+                          "naeringskode2": {
+                            "type": "object",
+                            "properties": {
+                              "beskrivelse": {
+                                "type": "string",
+                                "description": "beskrivelse"
+                              },
+                              "kode": {
+                                "type": "string",
+                                "description": "kode"
+                              },
+                              "hjelpeenhetskode": {
+                                "type": "boolean",
+                                "description": "hjelpeenhetskode"
+                              }
+                            },
+                            "description": "naeringskode2"
+                          }
+                        }
+                      },
+                      "description": "enheter"
+                    }
+                  },
+                  "description": "_embedded"
+                },
+                "_links": {
+                  "type": "object",
+                  "properties": {
+                    "first": {
+                      "type": "object",
+                      "properties": {
+                        "href": {
+                          "type": "string",
+                          "description": "href"
+                        }
+                      },
+                      "description": "first"
+                    },
+                    "self": {
+                      "type": "object",
+                      "properties": {
+                        "href": {
+                          "type": "string",
+                          "description": "href"
+                        }
+                      },
+                      "description": "self"
+                    },
+                    "next": {
+                      "type": "object",
+                      "properties": {
+                        "href": {
+                          "type": "string",
+                          "description": "href"
+                        }
+                      },
+                      "description": "next"
+                    },
+                    "last": {
+                      "type": "object",
+                      "properties": {
+                        "href": {
+                          "type": "string",
+                          "description": "href"
+                        }
+                      },
+                      "description": "last"
+                    }
+                  },
+                  "description": "_links"
+                },
+                "page": {
+                  "type": "object",
+                  "properties": {
+                    "size": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "size"
+                    },
+                    "totalElements": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "totalElements"
+                    },
+                    "totalPages": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "totalPages"
+                    },
+                    "number": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "number"
+                    }
+                  },
+                  "description": "page"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Name",
+        "description": "Search for Name from Brreg",
+        "operationId": "Name",
+        "parameters": [
+          {
+            "name": "navn",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "x-ms-visibility": "important"
+          }
+        ]
+      }
+    },
+    "/enhetsregisteret/api/enheter/{OrgId}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "organisasjonsnummer": {
+                  "type": "string",
+                  "description": "organisasjonsnummer"
+                },
+                "navn": {
+                  "type": "string",
+                  "description": "navn"
+                },
+                "organisasjonsform": {
+                  "type": "object",
+                  "properties": {
+                    "kode": {
+                      "type": "string",
+                      "description": "kode"
+                    },
+                    "beskrivelse": {
+                      "type": "string",
+                      "description": "beskrivelse"
+                    },
+                    "_links": {
+                      "type": "object",
+                      "properties": {
+                        "self": {
+                          "type": "object",
+                          "properties": {
+                            "href": {
+                              "type": "string",
+                              "description": "href"
+                            }
+                          },
+                          "description": "self"
+                        }
+                      },
+                      "description": "_links"
+                    }
+                  },
+                  "description": "organisasjonsform"
+                },
+                "hjemmeside": {
+                  "type": "string",
+                  "description": "hjemmeside"
+                },
+                "postadresse": {
+                  "type": "object",
+                  "properties": {
+                    "land": {
+                      "type": "string",
+                      "description": "land"
+                    },
+                    "landkode": {
+                      "type": "string",
+                      "description": "landkode"
+                    },
+                    "postnummer": {
+                      "type": "string",
+                      "description": "postnummer"
+                    },
+                    "poststed": {
+                      "type": "string",
+                      "description": "poststed"
+                    },
+                    "adresse": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "adresse"
+                    },
+                    "kommune": {
+                      "type": "string",
+                      "description": "kommune"
+                    },
+                    "kommunenummer": {
+                      "type": "string",
+                      "description": "kommunenummer"
+                    }
+                  },
+                  "description": "postadresse"
+                },
+                "registreringsdatoEnhetsregisteret": {
+                  "type": "string",
+                  "description": "registreringsdatoEnhetsregisteret"
+                },
+                "registrertIMvaregisteret": {
+                  "type": "boolean",
+                  "description": "registrertIMvaregisteret"
+                },
+                "frivilligMvaRegistrertBeskrivelser": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "frivilligMvaRegistrertBeskrivelser"
+                },
+                "naeringskode1": {
+                  "type": "object",
+                  "properties": {
+                    "beskrivelse": {
+                      "type": "string",
+                      "description": "beskrivelse"
+                    },
+                    "kode": {
+                      "type": "string",
+                      "description": "kode"
+                    }
+                  },
+                  "description": "naeringskode1"
+                },
+                "antallAnsatte": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "antallAnsatte"
+                },
+                "forretningsadresse": {
+                  "type": "object",
+                  "properties": {
+                    "land": {
+                      "type": "string",
+                      "description": "land"
+                    },
+                    "landkode": {
+                      "type": "string",
+                      "description": "landkode"
+                    },
+                    "postnummer": {
+                      "type": "string",
+                      "description": "postnummer"
+                    },
+                    "poststed": {
+                      "type": "string",
+                      "description": "poststed"
+                    },
+                    "adresse": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "adresse"
+                    },
+                    "kommune": {
+                      "type": "string",
+                      "description": "kommune"
+                    },
+                    "kommunenummer": {
+                      "type": "string",
+                      "description": "kommunenummer"
+                    }
+                  },
+                  "description": "forretningsadresse"
+                },
+                "stiftelsesdato": {
+                  "type": "string",
+                  "description": "stiftelsesdato"
+                },
+                "institusjonellSektorkode": {
+                  "type": "object",
+                  "properties": {
+                    "kode": {
+                      "type": "string",
+                      "description": "kode"
+                    },
+                    "beskrivelse": {
+                      "type": "string",
+                      "description": "beskrivelse"
+                    }
+                  },
+                  "description": "institusjonellSektorkode"
+                },
+                "registrertIForetaksregisteret": {
+                  "type": "boolean",
+                  "description": "registrertIForetaksregisteret"
+                },
+                "registrertIStiftelsesregisteret": {
+                  "type": "boolean",
+                  "description": "registrertIStiftelsesregisteret"
+                },
+                "registrertIFrivillighetsregisteret": {
+                  "type": "boolean",
+                  "description": "registrertIFrivillighetsregisteret"
+                },
+                "sisteInnsendteAarsregnskap": {
+                  "type": "string",
+                  "description": "sisteInnsendteAarsregnskap"
+                },
+                "konkurs": {
+                  "type": "boolean",
+                  "description": "konkurs"
+                },
+                "underAvvikling": {
+                  "type": "boolean",
+                  "description": "underAvvikling"
+                },
+                "underTvangsavviklingEllerTvangsopplosning": {
+                  "type": "boolean",
+                  "description": "underTvangsavviklingEllerTvangsopplosning"
+                },
+                "maalform": {
+                  "type": "string",
+                  "description": "maalform"
+                },
+                "_links": {
+                  "type": "object",
+                  "properties": {
+                    "self": {
+                      "type": "object",
+                      "properties": {
+                        "href": {
+                          "type": "string",
+                          "description": "href"
+                        }
+                      },
+                      "description": "self"
+                    }
+                  },
+                  "description": "_links"
+                }
+              }
+            }
+          }
+        },
+        "summary": "OrgId",
+        "description": "Look up a single organization by organizational number",
+        "operationId": "OrgID",
+        "parameters": [
+          {
+            "name": "OrgId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
